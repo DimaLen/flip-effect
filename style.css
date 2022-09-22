@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    padding: 30px 0;
+}
+
+.header_ul{
+    display: flex;
+    gap: 40px;
+}
+
+.header_link{
+    font-size: 24px;
+    line-height: 30px;
+    color: #B08EAD;
+}
+
+.intro{
+    background: #C9ADC6;
+    padding: 70px 0;
+}
+.card_pretitle{
+    font-size: 14px;
+    line-height: 30px;    
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.card_title{
+    font-size: 45px;
+    line-height: 55px;
+}
+.card_button{
+    background:none;
+    border:none;
+    color:white;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+
+.card_text{
+    font-size: 30px;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 430px;
+    height: 450px;
+    perspective: 1200px;
+}
+
+.card_inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card_inner{
+    transform: rotateY(180deg);
+}
+
+
+.card_front, .card_back{
+    position: absolute;
+    color:white;
+    background: #B08EAD;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+.card_front{
+    padding: 120px 0 120px 40px;
+}
+
+.card_back{
+    padding-top: 120px;
+    transform: rotateY(180deg);
+}
+
+.intro_block{
+    position: relative;
+}
+.intro_card{
+    position: absolute;
+    right: 0;
+    top: 110px;
+}
